@@ -5,11 +5,20 @@
   /* font-family: 'Open Sans', sans-serif; */
   font-family: "Work Sans", sans-serif;
 }
-
+.btn-primary{
+    border-radius: 8px;
+background: #FF900E;
+padding: 20px 25px;
+color: aliceblue;
+font-size: 1.25rem;
+cursor: pointer;
+border: none;
+}
 /* header styles */
 header {
   background: rgba(255, 144, 14, 0.1);
-  padding: 50px, 240px;
+
+  
 }
 nav {
   display: flex;
@@ -21,8 +30,7 @@ nav {
   color: #131313;
   font-size: 2.8rem;
   font-weight: 700;
-  margin-right: 200px;
-  padding-left: 200px;
+  
 }
 
 nav > ul {
@@ -38,6 +46,13 @@ nav li a {
   text-decoration: none;
   color: #424242;
 }
+.h-class{
+    margin: 30px 220px;
+}
+.li-class{
+    margin:30px 50px;
+
+}
 
 /* banner style */
 .banner-content {
@@ -48,6 +63,31 @@ nav li a {
 .banner {
   color: #131313;
   font-size: 64px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
+.banner-section img{
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+    
+}
+
+/* responsive */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav {
+        flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
+}
